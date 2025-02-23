@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/script.js",
+      "destination": "https://al.jacktheflap.com/script.js"
+    },
+    {
+      "source": "/api/send",
+      "destination": "https://al.jacktheflap.com/api/send"
+    }
+  ]
+}
