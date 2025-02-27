@@ -15,20 +15,22 @@ function noSearchDefaultPageRender() {
   >
     <h1 class="logo">Unduck</h1>
     <div class="url-container search-url-container">
+      <label for="search-input" style="display: none;">Search</label>
       <input
+        id="search-input"
         type="text"
         class="search-input"
         autocorrect="off"
         spellcheck="false"
         autocomplete="off"
       />
-      <button id="search-button" class="search-button">
+      <button id="search-button" class="search-button" aria-label="Search Button">
         <svg xmlns="http://www.w3.org/2000/svg" alt="Search" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M3 10a7 7 0 1014 0 7 7 0 10-14 0M21 21l-6-6"/></svg>
       </button>
     </div>
     <div class="down-arrow-container">
       <p class="jump-down-text">Learn more</p>
-      <button class="jump-down-button">
+      <button class="jump-down-button" aria-label="Jump To Info Button">
         <svg xmlns="http://www.w3.org/2000/svg" alt="Down Arrow" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0h24v24H0z" stroke="none"/><path d="M6 9l6 6 6-6"/></svg>
       </button>
     </div>
@@ -62,13 +64,15 @@ function noSearchDefaultPageRender() {
         <a href="https://duckduckgo.com/bang.html" target="_blank">all of DuckDuckGo's bangs.</a>
       </p>
       <div class="url-container">
+        <label for="url-input" style="display: none;">Custom Search URL</label>
         <input
+          id="url-input"
           type="text"
           class="url-input"
           value="https://unduck.jacktheflap.com?q=%s"
           readonly
         />
-        <button class="copy-button">
+        <button class="copy-button" aria-label="Copy Custom Search URL Button">
           <svg xmlns="http://www.w3.org/2000/svg" alt="Copy" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
         </button>
       </div>
